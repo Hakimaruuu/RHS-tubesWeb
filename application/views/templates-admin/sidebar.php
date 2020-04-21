@@ -39,7 +39,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('index.php/admin/artikel_admin') ?>">
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/artikel_admin/edit_page') ?>">
           <i class="fas fa-fw fa-file-invoice"></i>
           <span>Artikel</span></a>
       </li>

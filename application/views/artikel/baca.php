@@ -118,7 +118,9 @@ h3 {
                             </div>
                             <div class="col-12">
                               <br>
-                              <img class="rounded img-fluid" src="<?php echo $artikel['gambar']; ?>"><br>
+                              <img class="rounded img-fluid" src="<?php echo $artikel['gambar']; ?>">
+                              <!-- <?php echo "<img src".base_url("assets/".$gambar['nama_file']."' width='545' height='373'>"); ?> -->
+                              <br>
                             </div> 
                             <div class="col-11">
                               <br>
@@ -148,15 +150,17 @@ h3 {
                         <input type="hidden" name="refresh" value="<?php echo base_url(uri_string()) ?>">
                         <input type="hidden" name="iduser" value="<?php echo $user['id_user'] ?>">
                         <input type="hidden" name="idart" value="<?php echo $artikel['id_artikel'] ?>">
-                        <input type="hidden" name="date" value="<?php echo $artikel['n_date'] ?>">
+                        <input type="hidden" name="date" value="<?php $date = date("D, d M Y"); echo $date; ?>">
                         <input type="hidden" name="name" value="<?php echo $user['nama'] ?>">
-                        <textarea name="isi" cols="70" rows="5"></textarea>
+                        <div class="input-group">
+                          <textarea name="isi" cols="70" rows="5" class="form-control" aria-label=""></textarea>
+                        </div><br>
                         <button class="btn btn-success" type="submit" name="kirim">Kirim Komentar</button>
 
                       </div>
                       <br>
                       <hr class="sidebar-divider d-none d-md-block" style="margin-right: 100px;">
-                      <div class="col-7">
+                      <div class="col-10">
 
                           <?php foreach ($komen as $komen) :?>
                           
@@ -164,7 +168,7 @@ h3 {
                             <ul>
                             <li>
                             <img height="50" src="https://www.pinclipart.com/picdir/big/200-2008697_account-customer-login-man-user-icon-login-icon.png">
-                              <span>&ensp;Dari <?php echo $komen['nama']; ?> 
+                              <span class="col-7">&ensp;Dari <?php echo $komen['nama']; ?> pada <?php echo $komen['n_date']; ?> 
                               </span>
                                 <br><br>
                                <p><?php echo $komen['isi']; ?></p> 

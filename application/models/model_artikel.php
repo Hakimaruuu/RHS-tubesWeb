@@ -77,4 +77,28 @@ class model_artikel extends CI_Model
 		$this->db->delete('db_artikel');
 	}
 
+	public function update_data($where,$data,$tabel){
+		$this->db->where($where);
+		$this->db->update($tabel,$data);
+	}
+
+	public function tambah_data($tabel,$data){
+		$this->db->insert($tabel,$data);
+	}
+
+	// public function save($upload){
+ //    $data = array(
+ //      'deskripsi'=>$this->input->post('input_deskripsi'),
+ //      'nama_file' => $upload['file']['file_name'],
+ //      'ukuran_file' => $upload['file']['file_size'],
+ //      'tipe_file' => $upload['file']['file_type']
+ //    );
+    
+ //    $this->db->insert('tb_gambar', $data);
+	// }
+
+	// public function get_gambar($id){
+	// 	return $this->db->where('id_artikel',$id)->get('tb_gambar');
+	// }
+
 }                                           

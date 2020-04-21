@@ -90,42 +90,18 @@ h3 {
 </style>
 
 <article>
-    <div class=" container-fluid">
-        <div class="row d-none">
-            <div class="col">
-                <div class="title-section">
-                    <!-- INI TITLE -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="<?php echo base_url('assets/img/slider5.jpg') ?>" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="<?php echo base_url('assets/img/slider4.jpg') ?>" class="d-block w-100" alt="...">
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-7">
+    <div class=" container-fluid ">
+        <div class="row rounded">
+            <div class="col-7 rounded">
+                <div class="mt-5 bg-success rounded text-white <?php echo $dnone; ?>"> 
+                  <div class="col-11 ml-1 "><br>
+                    <h5> <?php echo $info; ?> </h5>
+                  </div><br>
+                </div><br>
+                <?php echo anchor('admin/artikel_admin/tambah_page','<h5 class="btn btn-sm btn-primary"> Tambah Artikel </h5>')?>
+                
               <!-- INI TEMPAT KONTEN -->
-                <div class="content-section">
+                <div class="content-section rounded">
                     <ul class="list-unstyled list-box-data normal" style="margin-left: 40px; margin-top: 10px;">
                       <br>
                      <?php if($artikel==NULL){ ?>
@@ -142,7 +118,7 @@ h3 {
                             <div class="col-7 col-sm-9">
                               <?php echo '<div class = "col-12" style="margin-top: 25px;">
                                 <h3 class="title poppins-semibold medium mt-2 js-cropText" style=" text-align: left; float: none; position: static; ">
-                                  <img class="img-fluid" src="'.$art->gambar.'" alt><br><br>
+                                  <img class="img-fluid rounded" src="'.$art->gambar.'" alt><br><br>
                                   <div class="">
                                     <span>'.$art->judul.'</span>
                                   </div>

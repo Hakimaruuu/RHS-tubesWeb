@@ -137,6 +137,7 @@ h3 {
                       <?php foreach($artikel as $art) :?>
                       <table>
                         <tbody>
+                          <tr>
                           <td>
                             <div class="content-item" data-id="">
                               <div class="row row-1">
@@ -166,15 +167,16 @@ h3 {
                               </div>
                               </div>
                             </div>
+                            <hr class="sidebar-divider d-none d-md-block" style="margin-right: 100px;">
                           </td>
+                          </tr>
                         </tbody>
                       </table>
-                      <hr class="sidebar-divider d-none d-md-block" style="margin-right: 100px;">
                       <?php endforeach; ?>
                    </ul>
-
-
                 </div>
+                
+
             </div>
             <div class="col-5">
               <!-- INI TEMPAT KONTEN PINGGIRAN -->

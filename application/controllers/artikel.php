@@ -18,16 +18,16 @@ class Artikel extends CI_controller{
     public function semua()
     {
       //PAGINATION
-      $this->load->library('pagination');
+      // $this->load->library('pagination');
 
-      //CONFIG
-      $config['base_url'] = 'http://localhost/ci-RHS/index.php/artikel/semua';
-      $config['total_rows'] = $this->model_artikel->countArtikel();
-      $config['per_page'] = 5;
-      // var_dump($config['total_rows']); die;
+      // //CONFIG
+      // $config['base_url'] = 'http://localhost/ci-RHS/index.php/artikel/semua';
+      // $config['total_rows'] = $this->model_artikel->countArtikel();
+      // $config['per_page'] = 5;
+      // // var_dump($config['total_rows']); die;
 
-      //INITIALIZE
-      $this->pagination->initialize($config);
+      // //INITIALIZE
+      // $this->pagination->initialize($config);
 
       
       $data['judul'] = 'Semua Artikel';
@@ -143,8 +143,10 @@ class Artikel extends CI_controller{
       $this->load->view('templates/footer');
     }
 
+
     public function detail($id){
         $user = $this->session->userdata('username');
+        // $data['gambar'] = $this->model_artikel->get_gambar($id)->result_array();
         $data['artikel'] = $this->model_artikel->detail_artikel($id)->result_array();
         $data['komen'] = $this->model_artikel->get_komen($id)->result_array();
         $data['user'] = $this->model_artikel->get_user($user)->row_array();
@@ -155,10 +157,12 @@ class Artikel extends CI_controller{
     }
 
     public function author($adminkode){
+      $data['judul'] = '';
+      $data['carousel'] = 'd-none';
       $data['artikel'] = $this->model_artikel->detail_author($adminkode);
       $this->load->view('templates/header');
       $this->load->view('templates/sidebar');
-      $this->load->view('artikel/dashboard', $data);
+      $this->load->view('artikel/author', $data);
       $this->load->view('templates/footer');
     }
 
