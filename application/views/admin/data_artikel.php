@@ -92,7 +92,7 @@ h3 {
 <article>
     <div class=" container-fluid ">
         <div class="row rounded">
-            <div class="col-7 rounded">
+            <div class="col-12 rounded">
                 <div class="mt-5 bg-success rounded text-white <?php echo $dnone; ?>"> 
                   <div class="col-11 ml-1 "><br>
                     <h5> <?php echo $info; ?> </h5>
@@ -136,7 +136,7 @@ h3 {
                                 Kategori : <?php echo '<span class="col-7" style="margin-top: 0px;">'.$art->n_kategori.'</span>' ?>
                               </div>
                               <div class="col-11 mt-2">
-                                <?php echo anchor('admin/artikel_admin/ubah/'.$art->id_artikel,'<span class="btn btn-sm btn-success"> Edit </span>')?>
+                                <?php echo anchor('admin/artikel_admin/editor/'.$art->id_artikel,'<span class="btn btn-sm btn-success"> Edit </span>')?>
                                 <?php echo anchor('admin/artikel_admin/hapus/'.$art->id_artikel,'<span class="btn btn-sm btn-danger">Hapus</span>')?>
                               </div>
                             </div>
@@ -152,16 +152,7 @@ h3 {
                    </ul>
                 </div>
             </div>
-            <div class="col-5">
-              <!-- INI TEMPAT KONTEN PINGGIRAN -->
-              <div class="sidebar-item">
-                <div class="make-me-sticky">
-                  <h3></h3>
-                  <img src="https://tpc.googlesyndication.com/simgad/9835340693137079672?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qkkLzocxSboQaRmznhdvq-P3CB8hw">
-                </div>
-              </div>
-            </div>
-        </div>
+            
     </div>
 </article>
   </div>
