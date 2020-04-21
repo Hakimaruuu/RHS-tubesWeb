@@ -123,7 +123,7 @@ h3 {
             </div>
         </div>
         <div class="row">
-            <div class="col-7">
+            <div class="col-12">
               <!-- INI TEMPAT KONTEN -->
                 <div class="content-section">
                     
@@ -178,15 +178,7 @@ h3 {
                 
 
             </div>
-            <div class="col-5">
-              <!-- INI TEMPAT KONTEN PINGGIRAN -->
-              <div class="sidebar-item">
-                <div class="make-me-sticky">
-                  <h3></h3>
-                  <img src="https://tpc.googlesyndication.com/simgad/9835340693137079672?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qkkLzocxSboQaRmznhdvq-P3CB8hw">
-                </div>
-              </div>
-            </div>
+            
         </div>
     </div>
 </article>

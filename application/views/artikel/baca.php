@@ -93,7 +93,7 @@ h3 {
   <!-- <div>Isi data komen: <br> <?php $date = date("D, d M Y G:i"); echo $date; var_dump($komen); echo "</div>Isi data artikel: <br><div>"; var_dump($artikel); echo "</div>Isi data user: <br><div>"; var_dump($user); ?> lihat kontroler artikel sama model_artikel</div> -->
     <div class=" container-fluid">
         <div class="row">
-            <div class="col-7">
+            <div class="col-12">
               <!-- INI TEMPAT KONTEN -->
                 <div class="content-section">
                     <ul class="list-unstyled list-box-data normal" style="margin-left: 40px; margin-top: 10px;">
@@ -183,16 +183,7 @@ h3 {
                 </div>
             </div>
             
-            <div class="col-3">
-              <!-- INI TEMPAT KONTEN PINGGIRAN -->
-              <div class="sidebar-item">
-                <div class="make-me-sticky">
-                  <br><h4>Artikel Serupa</h4>
-
-                  <img class="img-fluid" src="https://tpc.googlesyndication.com/simgad/9835340693137079672?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qkkLzocxSboQaRmznhdvq-P3CB8hw" alt>
-                </div>
-              </div>
-            </div>
+            
         </div>
     </div>
 </article>
